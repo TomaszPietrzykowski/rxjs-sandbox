@@ -1,0 +1,6 @@
+<div class="container">
+<button (click)="onClick()">Fetch photo</button>
+<div class="img-container">
+    <div *ngIf="photo===''">Fetching photo.....</div>
+    <img *ngIf="photo" [src]="photo" alt="" /></div>
+</div>
